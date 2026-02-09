@@ -1,0 +1,18 @@
+format = '''
+[┌](dimmed white) $git_branch$directory
+[└](dimmed white)$character'''
+
+[directory]
+truncation_length = 5
+read_only = " 󰌾"
+style = "purple"
+
+[git_branch]
+symbol = " "
+format = "[$symbol$branch(:$remote_branch)]($style) "
+style = "cyan"
+
+[character]
+success_symbol = "[➜](dimmed white)"
+error_symbol = "[➜](red)"
+
