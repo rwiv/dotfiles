@@ -1,2 +1,2 @@
-alias nv='nvim'
+alias vi='nvim'
 

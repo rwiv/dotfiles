@@ -9,7 +9,6 @@ focus-follows-mouse = true
 clipboard-read = allow
 clipboard-write = allow
 clipboard-trim-trailing-spaces = true
-copy-on-select = false
 
 window-width = 130
 window-height = 33
