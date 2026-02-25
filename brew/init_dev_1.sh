@@ -27,7 +27,7 @@ brew install gh
 brew install kubernetes-cli
 brew install kubectx
 brew install helm
-brew install k9s
+brew install derailed/k9s/k9s
 
 brew install node
 brew install python@3.14
