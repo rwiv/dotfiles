@@ -113,7 +113,7 @@ eval "$(zoxide init zsh)"
 # install mcfly
 eval "$(mcfly init zsh)"
 
-# set PATH env
+# add local bin PATH
 export PATH="$PATH:$HOME/.local/bin"
 
 # source config files
