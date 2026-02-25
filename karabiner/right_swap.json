@@ -1,0 +1,10 @@
+{
+  "description": "right_option -> f18 swap",
+  "manipulators": [
+    {
+      "from": { "key_code": "right_option" },
+      "to": [{ "key_code": "f18" }],
+      "type": "basic"
+    }
+  ]
+}

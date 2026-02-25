@@ -1,0 +1,15 @@
+{
+  "description": "left_command <-> left_command swap",
+  "manipulators": [
+    {
+      "from": { "key_code": "left_command" },
+      "to": [{ "key_code": "left_control" }],
+      "type": "basic"
+    },
+    {
+      "from": { "key_code": "left_control" },
+      "to": [{ "key_code": "left_command" }],
+      "type": "basic"
+    }
+  ]
+}
