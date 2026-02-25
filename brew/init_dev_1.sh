@@ -33,8 +33,6 @@ brew install node
 brew install python@3.14
 brew install openjdk
 brew install go
-brew install rust
-brew install rust-analyzer
 
 brew install pnpm
 brew install uv
