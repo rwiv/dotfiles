@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,19 +103,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-## install startship
+# install startship
 export STARSHIP_CONFIG=$HOME/.config/starship.toml
 eval "$(starship init zsh)"
 
-## install zoxide (z cmd)
+# install zoxide (z cmd)
 eval "$(zoxide init zsh)"
 
-## install mcfly
+# install mcfly
 eval "$(mcfly init zsh)"
 
-## set basis commands
-alias vi='nvim'
-alias vim='nvim'
-alias l='eza -l'
-alias ll='eza -la'
+# set PATH env
+export PATH="$PATH:$HOME/.local/bin"
 
+# source config files
+for file in ~/dotfiles/zsh/plugins/*.zsh; do
+  [[ -f "$file" ]] && source "$file"
+done
