@@ -220,7 +220,7 @@ alias gtv='git tag | sort -V'
 
 alias gw='git worktree'
 alias gwa='git worktree add'
-alias gwls='git worktree list'
+alias gwl='git worktree list'
+alias gwd='git worktree remove'
 alias gwmv='git worktree move'
-alias gwrm='git worktree remove'
 
