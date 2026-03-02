@@ -3,6 +3,8 @@
 brew install --cask karabiner-elements
 brew install --cask linearmouse
 
+brew install --cask rectangle
+
 brew install --cask google-chrome
 
 brew install --cask obsidian
