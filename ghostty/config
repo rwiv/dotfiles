@@ -10,8 +10,10 @@ clipboard-read = allow
 clipboard-write = allow
 clipboard-trim-trailing-spaces = true
 
-window-width = 130
-window-height = 33
+window-width = 140
+window-height = 35
+window-position-x = 500
+window-position-y = 160
 window-inherit-working-directory = false
 window-inherit-font-size = false
 
@@ -21,6 +23,8 @@ cursor-style-blink = true
 mouse-scroll-multiplier = 3
 
 macos-option-as-alt = true
+
+keybind = cmd+f=toggle_fullscreen
 
 palette = 0=#45475a
 palette = 1=#f38ba8
