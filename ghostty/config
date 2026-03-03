@@ -10,10 +10,10 @@ clipboard-read = allow
 clipboard-write = allow
 clipboard-trim-trailing-spaces = true
 
-window-width = 140
-window-height = 35
+window-width = 130
+window-height = 33
 window-position-x = 500
-window-position-y = 160
+window-position-y = 200
 window-inherit-working-directory = false
 window-inherit-font-size = false
 
