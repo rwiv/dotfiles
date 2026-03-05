@@ -1,0 +1,58 @@
+{
+  "general": {
+    "sessionRetention": {
+      "enabled": true,
+      "maxAge": "7d",
+      "maxCount": 100,
+      "minRetention": "1d"
+    },
+    "preferredEditor": "neovim"
+  },
+  "ui": {
+    "theme": "Default",
+    "showModelInfoInChat": false,
+    "showCitations": false,
+    "loadingPhrases": "off",
+    "footer": {
+      "hideContextPercentage": true
+    }
+  },
+  "privacy": {
+    "usageStatisticsEnabled": false
+  },
+  "model": {
+    "name": "gemini-3-flash-preview",
+    "compressionThreshold": 0.5
+  },
+  "agents": {
+    "overrides": {
+      "generalist": {
+        "enabled": false
+      },
+      "codebase_investigator": {
+        "enabled": false
+      },
+      "cli_help": {
+        "enabled": false
+      }
+    }
+  },
+  "context": {
+    "fileFiltering": {
+      "respectGitIgnore": true,
+      "respectGeminiIgnore": true
+    }
+  },
+  "tools": {
+    "useRipgrep": true,
+    "truncateToolOutputThreshold": 40000
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "experimental": {
+    "enableAgents": true
+  }
+}

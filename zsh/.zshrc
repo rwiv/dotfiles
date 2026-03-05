@@ -120,3 +120,8 @@ export PATH="$PATH:$HOME/.local/bin"
 for file in ~/dotfiles/zsh/plugins/*.zsh; do
   [[ -f "$file" ]] && source "$file"
 done
+
+# load secret environment variables
+if [ -f ~/.zsh_secrets ]; then
+    source ~/.zsh_secrets
+fi
