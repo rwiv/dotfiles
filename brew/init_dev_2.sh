@@ -1,13 +1,17 @@
-pipx install tldr
+#!/bin/sh
 
+# install rustup and rust-analyzer
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup component add rust-analyzer
 cargo +stable install cargo-llvm-cov --locked
 
+# install ohmyzsh and plugins
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+# install tmux plugin manager and nvim config
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+# install nvim config
 git clone https://github.com/rwiv/nvim.git ~/.config/nvim
