@@ -11,18 +11,22 @@ brew install starship
 brew install zoxide
 brew install eza
 brew install bat
-brew install ripgrep
-brew install fd
 brew install fzf
 brew install mcfly
-brew install fastfetch
+
 brew install lazygit
 brew install git-delta
+
+brew install fastfetch
 brew install htop
 brew install btop
 brew install duf
 brew install yazi
 brew install gh
+
+brew install fd
+brew install ripgrep
+brew install yq
 
 brew install kubernetes-cli
 brew install kubectx
