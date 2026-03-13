@@ -25,6 +25,7 @@ brew install yazi
 brew install gh
 
 brew install fd
+brew install tree
 brew install ripgrep
 brew install yq
 
