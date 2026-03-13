@@ -24,10 +24,11 @@ brew install duf
 brew install yazi
 brew install gh
 
+brew install ripgrep
 brew install fd
 brew install tree
-brew install ripgrep
 brew install yq
+brew install htmlq
 
 brew install kubernetes-cli
 brew install kubectx
