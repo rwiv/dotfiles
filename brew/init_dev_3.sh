@@ -1,11 +1,14 @@
 #!/bin/sh
 
-## npm
+## nodejs
 npm install -g @google/gemini-cli
 
 npm install -g agent-browser
-agent-browser install # Download Chromium
+agent-browser install
 
-## pipx
+## python
 pipx install tldr
-pipx install markdownify
+
+pip3 install markdownify
+pip3 install playwright
+python3 -m playwright install

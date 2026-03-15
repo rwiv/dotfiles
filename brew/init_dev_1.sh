@@ -36,7 +36,6 @@ brew install helm
 brew install derailed/k9s/k9s
 
 brew install node
-brew install python@3.14
 brew install openjdk
 brew install go
 
