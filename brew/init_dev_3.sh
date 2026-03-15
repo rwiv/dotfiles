@@ -3,7 +3,10 @@
 ## python
 pipx install tldr
 
+pip3 install requests
+pip3 install beautifulsoup4
 pip3 install markdownify
+
 pip3 install playwright
 python3 -m playwright install
 
