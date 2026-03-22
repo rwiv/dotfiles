@@ -15,7 +15,7 @@
     "loadingPhrases": "off",
     "footer": {
       "showLabels": false,
-      "items": ["git-branch", "sandbox", "model-name"]
+      "items": ["git-branch", "model-name", "context-used"]
     },
     "customThemes": {
       "Catppuccin Mocha": {
