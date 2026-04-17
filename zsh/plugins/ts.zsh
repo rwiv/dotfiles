@@ -6,3 +6,5 @@ alias pnl='pnpm lint'
 
 alias pnb='pnpm build'
 
+alias pnt='pnpm test'
+

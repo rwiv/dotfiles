@@ -1,5 +1,7 @@
 alias ur='uv run'
 
+alias urm='uv run python -m'
+
 alias urc='uv run pyright'
 
 alias url='uv run ruff check'
