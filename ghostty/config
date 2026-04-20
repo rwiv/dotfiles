@@ -28,17 +28,17 @@ keybind = cmd+f=toggle_fullscreen
 
 palette = 0=#26233a
 palette = 1=#eb6f92
-palette = 2=#3e8fb0
+palette = 2=#a6e3a1
 palette = 3=#f6c177
-palette = 4=#ea9a97
+palette = 4=#3e8fb0
 palette = 5=#c4a7e7
 palette = 6=#9ccfd8
 palette = 7=#e0def4
 palette = 8=#6e6a86
 palette = 9=#eb6f92
-palette = 10=#3e8fb0
+palette = 10=#a6e3a1
 palette = 11=#f6c177
-palette = 12=#ea9a97
+palette = 12=#3e8fb0
 palette = 13=#c4a7e7
 palette = 14=#9ccfd8
 palette = 15=#e0def4
