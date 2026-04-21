@@ -1,6 +1,7 @@
 #!/bin/sh
 
 brew install --cask ghostty
+brew install --cask font-jetbrains-mono-nerd-font
 brew install --cask font-d2coding-nerd-font
 
 brew install tmux
