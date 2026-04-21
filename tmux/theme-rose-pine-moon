@@ -1,0 +1,14 @@
+set -g @dracula-colors "
+white='#e0def4'
+gray='#393552'
+dark_gray='#232136'
+light_purple='#c4a7e7'
+dark_purple='#232136'
+cyan='#9ccfd8'
+green='#a6e3a1'
+orange='#ea9a97'
+red='#eb6f92'
+pink='#f5c2e7'
+yellow='#f6c177'
+"
+
