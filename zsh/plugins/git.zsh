@@ -73,50 +73,6 @@ function gbds() {
     done
 }
 
-function gbdsa() {
-  local default_branch=$(git_main_branch)
-  (( ! $? )) || default_branch=$(git_develop_branch)
-
-  local branches_to_delete=()
-
-  # 1. 삭제할 브랜치 목록 수집
-  while read branch; do
-    local merge_base=$(git merge-base $default_branch $branch)
-    if [[ $(git cherry $default_branch $(git commit-tree $(git rev-parse $branch\^{tree}) -p $merge_base -m _)) = -* ]]; then
-      branches_to_delete+=("$branch")
-    fi
-  done < <(git for-each-ref refs/heads/ "--format=%(refname:short)")
-
-  # 2. 삭제할 브랜치가 없는 경우 스크립트 종료
-  if [[ ${#branches_to_delete[@]} -eq 0 ]]; then
-    echo "삭제할 병합된 브랜치가 없습니다."
-    return 0
-  fi
-
-  # 3. 삭제 대상 브랜치 목록 출력
-  echo "🔥 다음 브랜치들이 로컬 및 원격(origin)에서 삭제됩니다:"
-  for branch in "${branches_to_delete[@]}"; do
-    echo "  - $branch"
-  done
-  echo ""
-
-  # 4. 사용자 확인 (Zsh 및 Bash 호환을 위해 echo -n 사용)
-  echo -n "정말 삭제하시겠습니까? (y/n): "
-  read confirm
-
-  # 5. y 또는 Y 입력 시 삭제 진행
-  if [[ "$confirm" =~ ^[Yy]$ ]]; then
-    for branch in "${branches_to_delete[@]}"; do
-      echo "🗑️ 삭제 중: $branch"
-      git branch -D "$branch"
-      git push origin --delete "$branch" 2>/dev/null || true
-    done
-    echo "✅ 삭제 완료!"
-  else
-    echo "🚫 취소되었습니다. 브랜치를 삭제하지 않습니다."
-  fi
-}
-
 alias gf='git fetch'
 alias gfo='git fetch origin'
 
